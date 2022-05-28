@@ -81,3 +81,6 @@ echo sLinkFile = "%AppData%\Microsoft\Windows\Start Menu\Programs\Discord.lnk" >
 echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
 echo oLink.TargetPath = "C:\Program Files (x86)\Discord\Discord.exe" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
+
+
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Discord" /v "UninstallString" /t REG_SZ /d "C:\Program Files (x86)\Discord\uninst000.bat"
