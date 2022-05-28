@@ -84,3 +84,11 @@ echo oLink.Save >> %SCRIPT%
 
 
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Discord" /v "UninstallString" /t REG_SZ /d "C:\Program Files (x86)\Discord\uninst000.bat"
+
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Discord" /v "DisplayName" /t REG_SZ /d "Discord"
+
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Discord" /v Publisher" /t REG_DWORD /d "foxcat"
+
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Discord" /v NoModify" /t REG_DWORD /d 1
+
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Discord" /v NoRepair" /t REG_DWORD /d 1
